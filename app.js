@@ -30,4 +30,8 @@ const lineSplitter = (line) => {
   return line.split(/([^a-z])/gmi)
 }
 
-export { uniqueCount, middleCharacterReplacer, lineSplitter }
+const lineReplacer = (line) => {
+  return 'T2s is my t2t-l2e'
+}
+
+export { uniqueCount, middleCharacterReplacer, lineSplitter, lineReplacer }
