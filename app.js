@@ -27,7 +27,7 @@ const middleCharacterReplacer = (word) => {
 }
 
 const lineSplitter = (line) => {
-  return ["This", " ", "is", " ", "my", " ", "test", "-", "line"]
+  return line.split(/([^a-z])/gmi)
 }
 
 export { uniqueCount, middleCharacterReplacer, lineSplitter }
