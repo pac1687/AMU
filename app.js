@@ -1,3 +1,4 @@
+const fs = require('fs')
 /*
 - Parse text file (new line delimiter)
 - Loop over each line
@@ -39,4 +40,9 @@ const lineReplacer = (line) => {
   return newLine.join('')
 }
 
-export { uniqueCount, middleCharacterReplacer, lineSplitter, lineReplacer }
+const fileParser = (path) => {
+  const lines = fs.readFileSync(path).toString().split('\n')
+  return lines.filter(v => v !== '')
+}
+
+export { uniqueCount, middleCharacterReplacer, lineSplitter, lineReplacer, fileParser }

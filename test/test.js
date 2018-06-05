@@ -1,5 +1,5 @@
 const assert = require('assert')
-const { uniqueCount, middleCharacterReplacer, lineSplitter, lineReplacer } = require('../app')
+const { uniqueCount, middleCharacterReplacer, lineSplitter, lineReplacer, fileParser } = require('../app')
 
 describe ('uniqueCount', () => {
   it('should return the number of unique characters', () => {
@@ -22,5 +22,16 @@ describe ('lineSplitter', () => {
 describe ('lineReplacer', () => {
   it('should replace words in a line with first character, number of uniques in the middle, and last character', () => {
     assert.equal(lineReplacer('This is my test-line'), 't2s is my t2t-l2e')
+  })
+})
+
+describe('fileParser', () => {
+  it('should read a text file and return them as an array of lines', () => {
+    assert.deepEqual(fileParser('./test/test.txt'), [
+      'this',
+      'is',
+      'a',
+      'test of the fileParser'
+    ])
   })
 })
