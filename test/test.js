@@ -21,6 +21,6 @@ describe ('lineSplitter', () => {
 
 describe ('lineReplacer', () => {
   it('should replace words in a line with first character, number of uniques in the middle, and last character', () => {
-    assert.equal(lineReplacer('This is my test-line'), 'T2s is my t2t-l2e')
+    assert.equal(lineReplacer('This is my test-line'), 't2s is my t2t-l2e')
   })
 })

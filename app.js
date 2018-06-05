@@ -31,7 +31,12 @@ const lineSplitter = (line) => {
 }
 
 const lineReplacer = (line) => {
-  return 'T2s is my t2t-l2e'
+  const words = lineSplitter(line)
+  const newLine = words.map((word) => {
+    const lowerWord = word.toLowerCase()
+    return word.length <= 2 ? lowerWord : middleCharacterReplacer(lowerWord)
+  })
+  return newLine.join('')
 }
 
 export { uniqueCount, middleCharacterReplacer, lineSplitter, lineReplacer }
