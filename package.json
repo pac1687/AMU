@@ -1,0 +1,30 @@
+{
+  "name": "amu",
+  "version": "1.0.0",
+  "description": "Code Challenge for AMU",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "babel-register": "^6.26.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha --require babel-register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pac1687/AMU.git"
+  },
+  "author": "Justin Pacubas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pac1687/AMU/issues"
+  },
+  "homepage": "https://github.com/pac1687/AMU#readme"
+}
