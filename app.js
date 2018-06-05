@@ -8,7 +8,15 @@
 */
 
 const uniqueCount = (chars) => {
-  return 5
+  let count = 0
+  const unique = []
+  chars.split("").forEach((char) => {
+    if (!unique.includes(char)) {
+      unique.push(char)
+      count += 1
+    }
+  })
+  return count
 }
 
 export { uniqueCount }
