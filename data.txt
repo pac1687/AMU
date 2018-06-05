@@ -1,0 +1,4 @@
+woocommerce
+woo-commerce
+woo commerce
+"WooCommerce is an open source e-commerce plugin for WordPress"
