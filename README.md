@@ -11,6 +11,9 @@ When run, the app logs out the results in the console.
 ### Tests
 ![image](https://user-images.githubusercontent.com/5856234/41007029-8a21a9fa-68e9-11e8-87d9-adbc1f0cdaa0.png)
 
+### Requirements
+This project requires Node (https://nodejs.org/en/download/) to be installed.
+
 ### Setup
 To run the project:
 
