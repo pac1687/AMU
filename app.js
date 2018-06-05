@@ -20,7 +20,7 @@ const uniqueCount = (chars) => {
 }
 
 const middleCharacterReplacer = (word) => {
-  return 'eplacethemiddl'
+  return 'r10e'
 }
 
 export { uniqueCount, middleCharacterReplacer }

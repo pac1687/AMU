@@ -9,6 +9,6 @@ describe ('uniqueCount', () => {
 
 describe ('middleCharacterReplacer', () => {
   it('should replace the middle characters with the number of unique characters', () => {
-    assert.equal(middleCharacterReplacer('replacethemiddle'), 'eplacethemiddl')
+    assert.equal(middleCharacterReplacer('replacethemiddle'), 'r10e')
   })
 })
