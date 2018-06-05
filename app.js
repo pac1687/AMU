@@ -19,4 +19,8 @@ const uniqueCount = (chars) => {
   return count
 }
 
-export { uniqueCount }
+const middleCharacterReplacer = (word) => {
+  return 'eplacethemiddl'
+}
+
+export { uniqueCount, middleCharacterReplacer }
