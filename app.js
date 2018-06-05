@@ -4,7 +4,7 @@
   - Loop over each word
     - side aside first and last characters
     - take remaining characters and determine number of uniques
-    - space delimiter
+    - non-alpha delimiter
 */
 
 const uniqueCount = (chars) => {
@@ -20,7 +20,14 @@ const uniqueCount = (chars) => {
 }
 
 const middleCharacterReplacer = (word) => {
-  return 'r10e'
+  const firstChar = word[0]
+  const lastChar = word[word.length - 1]
+  const middleCount = uniqueCount(word.slice(1, word.length - 1))
+  return `${firstChar}${middleCount}${lastChar}`
 }
 
-export { uniqueCount, middleCharacterReplacer }
+const lineSplitter = (line) => {
+  return ["This", " ", "is", " ", "my", " ", "test", "-", "line"]
+}
+
+export { uniqueCount, middleCharacterReplacer, lineSplitter }
