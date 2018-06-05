@@ -45,4 +45,13 @@ const fileParser = (path) => {
   return lines.filter(v => v !== '')
 }
 
+const app = () => {
+  const lines = fileParser('./data.txt')
+  lines.forEach((line) => {
+    console.log(lineReplacer(line))
+  })
+}
+
+app()
+
 export { uniqueCount, middleCharacterReplacer, lineSplitter, lineReplacer, fileParser }
