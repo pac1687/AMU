@@ -1,5 +1,9 @@
 const assert = require('assert')
-const { uniqueCount, middleCharacterReplacer, lineSplitter, lineReplacer, fileParser } = require('../app')
+const { uniqueCount,
+        middleCharacterReplacer,
+        lineSplitter,
+        lineReplacer,
+        fileParser } = require('../app')
 
 describe ('uniqueCount', () => {
   it('should return the number of unique characters', () => {
@@ -8,19 +12,31 @@ describe ('uniqueCount', () => {
 })
 
 describe ('middleCharacterReplacer', () => {
-  it('should replace the middle characters with the number of unique characters', () => {
+  it(`should replace the middle characters with the number of
+      unique characters`, () => {
     assert.equal(middleCharacterReplacer('replacethemiddle'), 'r10e')
   })
 })
 
 describe ('lineSplitter', () => {
   it('should split the line on non-alphabetic characters', () => {
-    assert.deepEqual(lineSplitter('This is my test-line'), ['This', ' ', 'is', ' ', 'my', ' ', 'test', '-', 'line'])
+    assert.deepEqual(lineSplitter('This is my test-line'), [
+      'This',
+      ' ',
+      'is',
+      ' ',
+      'my',
+      ' ',
+      'test',
+      '-',
+      'line'
+    ])
   })
 })
 
 describe ('lineReplacer', () => {
-  it('should replace words in a line with first character, number of uniques in the middle, and last character', () => {
+  it(`should replace words in a line with first character, number of uniques
+      in the middle, and last character`, () => {
     assert.equal(lineReplacer('This is my test-line'), 't2s is my t2t-l2e')
   })
 })

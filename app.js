@@ -2,16 +2,16 @@ const fs = require('fs')
 /*
 - Parse text file (new line delimiter)
 - Loop over each line
+  - non-alpha delimiter
   - Loop over each word
-    - side aside first and last characters
+    - set aside first and last characters
     - take remaining characters and determine number of uniques
-    - non-alpha delimiter
 */
 
 const uniqueCount = (chars) => {
   let count = 0
   const unique = []
-  chars.split("").forEach((char) => {
+  chars.split('').forEach((char) => {
     if (!unique.includes(char)) {
       unique.push(char)
       count += 1
@@ -54,4 +54,8 @@ const app = () => {
 
 app()
 
-export { uniqueCount, middleCharacterReplacer, lineSplitter, lineReplacer, fileParser }
+export { uniqueCount,
+         middleCharacterReplacer,
+         lineSplitter,
+         lineReplacer,
+         fileParser }
