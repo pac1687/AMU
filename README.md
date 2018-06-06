@@ -21,7 +21,7 @@ To run the project:
 * run tests with `npm test`
 * run the app with `npm start`
 
-The path to the desired .txt file can be edited on line 49.
+The path to the desired .txt file can be edited on line 49 of `app.js`.
 
 ### Author
 Justin Pacubas
